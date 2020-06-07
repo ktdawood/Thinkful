@@ -1,0 +1,27 @@
+## Assignments
+
+For each of the following scenarios, call out the potential biases in the proposed experiment. Do your best to try to discover not only the bias, but the initial design. There is plenty of room for interpretation here, so make sure to state what assumptions you're making.
+
+1. You're testing advertising emails for a bathing suit company and you test one version of the email in February and 
+   the other in May.
+   
+   More customers will need bathing suits in May, thus, increasing the sales for bathing suits. This creates bias and will
+   not provide us an accurate testing result. In order to avoid the biases, we could, test both versions of the email in the same    month,
+   where one group receive the advertising emaill, whereas the other don't. We should also ensure that the selected sample 
+   groups possess the same charateristics.
+    
+2. You open a clinic to treat anxiety and find that the people who visit show a higher rate of anxiety than the general 
+   population.
+   
+   There is a selection bias in the sample of the population.
+   
+3. You launch a new ad billboard based campaign and see an increase in website visits in the first week.
+
+   Launching a new ad billboard campaign may not have any effect on the website visits because a new ad campaign will eventually
+   increase the number of people visiting the website in a given week. 
+   
+4. You launch a loyalty program but see no change in visits in the first week.
+
+   Progress of the new loyalty program should be measured against the control version of the program without the loyalty
+   program. In general, a new loyalty program should increase customer awareness, but it does not necessarily mean that customers
+   would visit the website/store immediately.

@@ -1,0 +1,94 @@
+1. What's the most expensive listing? What else can you tell me about the listing?
+SELECT 
+	name,
+	neighbourhood,
+	room_type,
+	number_of_reviews,
+	price
+FROM 
+	sfo_listings
+ORDER BY price DESC 
+LIMIT 1;
+
+Output: 
+"Full House Victorian: 7500 SqFt, 4 Floors, Hot Tub";"Western Addition";"Entire home/apt";3;10000
+
+--The most expensive listing is located in the Western Addition neighborhood. It is a Full House (Victorian) which is 7500 sqft
+--with four floors and a hot tub. The house cost $10000
+
+2. What neighborhoods seem to be the most popular?
+
+SELECT 
+	neighbourhood,
+	COUNT(*)
+FROM 
+	sfo_listings
+JOIN 
+	sfo_reviews
+ON 
+	sfo_listings.id = sfo_reviews.listing_id
+GROUP BY sfo_listings.neighbourhood
+ORDER BY COUNT(*) DESC
+LIMIT 5;
+
+Output:
+"Mission";32362
+"Western Addition";21294
+"Castro/Upper Market";19324
+"Bernal Heights";17869
+"Outer Sunset";16800
+
+--The most popular neighborhoods are the most reviewed. The top three popular neighborhoods are located in Mission, 
+--Western Addition, Castro/Upper Market.
+
+3. What time of year is the cheapest time to go to San Francisco? What about the busiest?
+
+CHEAPEST:
+SELECT 
+    available, 
+    calender_date, 
+    price
+FROM 
+    sfo_calendar
+WHERE
+    available = 't'
+GROUP BY
+    calender_date, 
+    available, 
+    price
+ORDER BY 
+    price ASC
+LIMIT 5;
+
+Output:
+"t";"2018-09-08";"$10.00"
+"t";"2018-09-09";"$10.00"
+"t";"2018-09-15";"$10.00"
+"t";"2018-09-16";"$10.00"
+"t";"2018-09-17";"$10.00"
+
+--The cheapest month to visit San Fransisco is in September where rooms are available at $10.
+BUSIEST:
+SELECT 
+    available, 
+    calender_date, 
+    COUNT(*) AS rooms
+FROM 
+    sfo_calendar
+WHERE
+    available = 'f'
+GROUP BY
+    calender_date, 
+    available
+ORDER BY 
+    rooms ASC
+LIMIT 5;
+
+Output:
+"f";"2018-12-05";2678
+"f";"2018-12-03";2680
+"f";"2018-12-04";2689
+"f";"2018-12-02";2693
+"f";"2018-12-01";2739
+
+--The most busiest time of the year is on December 5th, 2018, where 2678 rooms were booked.

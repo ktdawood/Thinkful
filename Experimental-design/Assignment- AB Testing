@@ -1,0 +1,67 @@
+# Assignments
+For each of the following questions, outline how you could use an A/B test to find an answer. Be sure to identify all five key components of an A/B test we outlined above.
+
+For each problem I will use the A/B testing framework to determine the components:
+- Two versions: Determine the control and test version
+- Samples: Decide the two groups. Are the groups similar to the population (in terms of demographics, gender etc)?
+- Hypothesis: What is my intention? What do I expect to happen?
+- Outcomes: What changes do I expect to see in the two verions? How can I measure the changes? What key metric is more
+            compatible to measuring the change?
+- Other measured variables: What other information can I use to ensure the groups are similar? Are there any secondary outcomes?
+                            What secondary outcomes do I consider in making the conclusion?
+
+**Problem 1: Does a new supplement help people sleep better?**
+
+Versions: For this problems let's consider two versions- the control version and the test version. The control version are the people who are already taking the supplement, whereas the test version is the group we'll be testing
+
+Sample: Next, let's determine the two sample groups. For this purpose, I will consider the occupation of the indidividual as well as the age group. We will sample them out into similar groups. Both groups will include two genders.
+
+Hypothesis: The group that takes the supplement will sleep better at night
+
+Outcomes: The key metric to determine the outcome of our test is the hours slept. We can decide the performance of the 
+          the supplement by deciding how well it affects the two groups. 
+          
+Other Measured Variables: Time it takes for the drug to put the individual to sleep. Health conditions (height, weight)
+
+**Problem 2. Will new uniforms help a gym's business?**
+
+Versions: Control vs test versions
+
+Sample: Out of the people attending the gym, we will pick two sample groups to test. One group will have new uniforms, whereas the
+        the other group will be wearing the old uniforms. Both groups consist of regular users with similar characterists.
+
+Hypothesis: New uniforms will attract more people to workout at the gym
+
+Outcomes: I expect to see 10% increase in traffic to the gym. Let's identify the number of people who use the gym regularly through their Ids. New uniforms can be a great motivation for people to workout because it will make them feel lively. The people who are satisfied can spread the world to their friends, which in fact, will increase the gym memberships. 
+
+Other Measured Variables: geographical location, parking, gym membership cost, gym hours, equipment, personal trainers, support staff
+
+**Problem 3. Will a new homepage improve my online exotic pet rental business?**
+
+Versions: The control version is the version who already use the pet rental business's homepage, whereas, the test group is the
+          group that we intend to test with the new homepage
+
+Sample: Let's select 50% of our population group to see the old site and the other 50% of visitors can view the new website.
+
+Hypothesis: We can improve traction of visitors by creating a new homepage of our online pet rental business
+
+Outcomes: We expect to see more people sign up to the pet rental business online. This can be tracked by looking at the number of
+          users who signed up to the old vs new sites. 
+
+Other Measured Variables: The results can also be measured by looking through other causes as to why people sign up. Moreover,
+                          we can use statistics to test how long people used the website on a given day.
+
+**Problem 4. If I put 'please read' in the email subject will more people read my emails?**
+
+Versions: We can send the email to 50% users with 'Please Read' on the subject line and the other emails would be as already it is 
+          already in use. The email with the 'Please Read' line is the test version
+
+Sample: Let's separate the population into two sample groups from the email list of users, where one group gets the email the 
+        'Please read' subject line
+
+Hypothesis: Users who received the email with the 'Please Read' line tend to read the email.
+
+Outcomes: Let's determine the outcome through the 'click rate'. We'll measure the effectiveness of the test version with
+          with the 'Please Read' line and determine how many users have actually read the email
+
+Other Measured Variables: Depends on the time of the day, the time it takes to open the email, age & gender of the user
